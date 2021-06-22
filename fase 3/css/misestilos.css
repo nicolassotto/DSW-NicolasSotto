@@ -1,0 +1,61 @@
+*{
+    margin: 5px;
+    border-radius: 3px;
+}
+header{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+aside{
+    grid-column: 1/2;
+    background-color: silver;
+}
+section{
+    grid-column: 2/5;
+    background-color: cornflowerblue;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+}
+nav ul{
+    list-style: none;
+    padding: 5px;
+    color: white;
+    background: black;
+}
+.menu li{
+    width: 100%;
+    text-align: center;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: chocolate;
+    height: 25px;
+    text-decoration: wavy;    
+}
+.dropdown li{
+    display: none;
+}
+.menu li:hover .dropdown li{
+    display: block;
+}
+.menu a:hover{
+    background: blueviolet;
+    color: white
+}
